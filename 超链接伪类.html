@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接伪类</title>
+    <style>
+        a:link {
+            color: red;
+            /* 选中未访问过的链接 */
+        }
+        a:visited {
+            color: green;
+            /* 选中已访问过的链接 */
+        }
+        a:hover {
+            color: blue;
+            /* 选中鼠标悬停在链接上的状态 */
+        }
+        a:active {
+            color: yellow;
+            /* 选中正在被点击的链接 */
+        }
+        /* lvha顺序书写 */
+        /* 在工作中是一个a标签与一个hover标签 */
+        a{
+            color: black;
+             /* 默认状态的链接颜色 */
+        }
+        a:hover{
+            color: blue;
+             /* 鼠标悬停时的链接颜色 */
+        }
+    </style>
+</head>
+<body>
+    <a href="#">这是一个链接</a>
+</body>
+</html>
