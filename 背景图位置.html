@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图位置</title>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            /* 背景图默认是平铺(复制)效果 */
+            background-image: url('your-image.jpg');
+            background-size: cover;
+            /* bgb 其中0 0表水平与垂直位置 */
+            /* -50 0 表示水平向左移动50px，垂直位置不变 */
+            /* 0 -100 表示水平位置不变，垂直向上移动100px */
+            /* background-position: left top; */
+
+            /* bgb bottom(如果只设置水平，垂直默认居中) */
+
+            /* background-position: left center; */
+            /* background-position: left bottom; */
+            /* background-position: center top; */
+            /* background-position: center center; */
+            /* background-position: center bottom; */
+            /* background-position: right top; */
+            /* background-position: right center; */
+            /* background-position: right bottom; */
+        }   
+    </style>
+
+</head>
+<body>
+    <div>div标签</div>
+</body>
+</html>

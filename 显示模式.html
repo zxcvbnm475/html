@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式</title>
+    <style>
+        /* 块元素 :独占一行 ：宽度默认是父级的100%,宽高属性生效*/
+        div{
+            width: 100px;
+            height: 100px;
+            /* display: inline-block;行内块 */
+            /* display: block;块级 */
+            /* display: inline;行内 */
+        }
+        .div1{
+            background-color: red;
+        }
+        .div2{
+            background-color: green;
+        }
+
+        /* 行内元素 :一行共存多个 ：宽度和高度由内容决定 ,宽高属性不生效*/
+        span{
+            width: 200px;
+            height: 200px;
+            
+            /* display: inline; */
+            display: inline-block;
+        }
+        .span1{
+            background-color: blue;
+        }
+        .span2{
+            background-color: yellow;
+        }
+        /* 行内块元素 :一行共存多个，宽度和高度由内容决定 ，可以加宽高生效*/
+        img{
+            width: 100px;
+            height: 100px;
+            display: block; j
+        }
+    </style>
+</head>
+<body>
+    <!-- 块元素 -->
+    <div>div标签1</div>
+    <div>div标签2</div>
+    <!-- 行内元素 -->
+    <span class="span1">span标签1</span>
+    <span class="span2">span标签2</span>
+    <!-- 行内块元素 -->
+    <img src="#" alt="1">
+    <img src="#" alt="2">
+</body>
+</html>

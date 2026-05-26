@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图的平铺方式</title>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            /* 背景图默认是平铺(复制)效果 */
+            background-image: url('your-image.jpg');
+            /* 不重复（只保留一张并显示在左上角） */
+            /* background-repeat: no-repeat; */
+            /* 重复（默认行为） */
+            /* background-repeat: repeat; */
+            /* 水平重复，垂直不重复及只有水平平铺*/
+            /* background-repeat: repeat-x; */
+            /* 水平不重复，垂直重复 */
+            /* background-repeat: repeat-y; */
+        }
+    </style>
+</head>
+<body>
+    <div>div标签</div>
+</body>
+</html>

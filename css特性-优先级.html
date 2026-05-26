@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css特性-优先级</title>
+    <style>
+        div {
+            color: green;
+        }
+        /* !important提高权重/优先级到最高，慎用 */
+        * {
+            color: red !important;
+        }
+        .box {
+            color: blue;
+        }
+        #test {
+            color: yellow;
+        }
+    /*  id选择器优先级高于class类选择器，class类选择器优先级高于标签选择器，标签选择器优先级高于*通配符 */
+    </style>
+</head>
+<body>
+    <div class="box" id="test" style="color: purple;">这是div标签</div>
+    <!-- 行内样式优先级最高！！important可以强化其他选择器的优先级(除去继承) -->
+    <p>这是p标签</p>
+</body>
+</html>

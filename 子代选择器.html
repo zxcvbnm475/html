@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子代选择器</title>
+    <style>
+        div > span {
+            color: red;
+            /* 选中所有儿子元素,不包括孙子等更深层的元素 */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>儿子标签</span>
+        <p>
+            <span>孙子标签</span>
+        </p>
+    </div>
+</body>
+</html>
